@@ -19,7 +19,6 @@ COPY backend/ /api/
 WORKDIR /app
 RUN npm ci --silent
 RUN npm run prodBuild
-RUN npm install -g serve
 
 # Install dependencies for Backend App
 RUN pip install --no-cache-dir --upgrade -r /api/requirements.txt
