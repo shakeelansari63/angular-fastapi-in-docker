@@ -1,10 +1,10 @@
 FROM nginx:1.25-alpine-slim
 
 # Install Python and Node
-RUN apk add --no-cache python3 py3-pip nodejs npm parallel
+RUN apk add --no-cache python3 py3-pip nodejs npm
 
 # Create App Folder for Frontend
-RUN mkdir -p /app
+RUN mkdir -p /app/log
 
 # Create Api Folder for Backend
 RUN mkdir -p /api
